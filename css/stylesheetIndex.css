@@ -1,0 +1,261 @@
+
+  .header {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .headerLogo {
+    padding: 10px;
+    width: 153px;
+  }
+
+  .rightHeader {
+    padding: 10px;
+    float: right;
+    width: 30%;
+  }
+
+  .rightHeader a {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    padding: 12px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .rightHeader a:hover {
+  color: #991c37;
+  opacity: 1;
+  }
+  
+
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+  }
+
+  /* Här Börjar INDEX innehållet*/
+
+/*Här är huvudinnehållet*/
+
+ .shader {
+    background-color: rgba(255, 255, 255, 0.45);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .holder {
+    position: relative;
+  }
+
+  .MondialBG {
+    background-image: url('./images/background2.jpg');    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .aboutBG{
+    background-image: url('./images/Mondial.png');
+    background-attachment: fixed;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+ 
+
+  .StadBG {
+    background-image: url('./images/stad.jpg');
+    background-attachment: fixed;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    
+  }
+
+  .stoftBG {
+    background-image: url('./images/fabrik.jpg');
+    background-attachment: fixed;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+
+  .serviceBG{
+    background-image: url('./images/service.jpg');
+    background-attachment: fixed;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+
+  .moldowBG {
+    background-image: url('./images/moldow.jpg');
+    background-attachment: fixed;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+  }
+
+  #Moldow {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+
+  }
+
+  .filteranlaggningBG {
+    background-image: url('./images/anlagning.jpg');
+    background-attachment: fixed;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+  #whiteBG{
+    background-color: rgb( 255, 255, 255, 0.8);
+    padding: 20px;
+  }
+
+
+  .containerText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    width: 50%;
+  }
+  .containerText h1 {
+    font-size: 60px;
+    text-align: left;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    padding-bottom: 5px;
+  }
+
+  .containerText h1::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #991c37;
+    width: 0;
+    position: relative;
+    bottom: -7px; /* your padding + border-width */
+    transition: width .8s ease;
+  }
+  
+  .sektion:hover h1::after {
+    width: 65%;
+  }
+
+  .containerText h2 {
+    font-size: 50px;
+    text-align: left;  
+  }
+  .containerText p {
+    text-align: left;
+    font-size: 20px;
+  }
+  .containerText a {
+    color: rgb(0, 0, 0);
+  }
+  .containerText a:hover {
+    color: rgb(153,28,55);
+  }
+
+  .more {
+    display: none;
+    text-align: left;
+    font-size: 20px;
+    
+  }
+  .dots{
+    display: inline;
+    text-align: left;
+  }
+
+  .myBtn {
+      background-color:rgb(153, 28, 55); /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      width: 150px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .myBtn:hover { opacity: 0.6;}
+
+    .kontaktBtn {
+      background-color:rgb(153, 28, 55); /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      width: 150px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .kontaktBtn:hover {
+      opacity: 0.6;
+    }
+
+  /*Här börjar footern*/  
+
+  * {
+    box-sizing: border-box;
+  }
+  .footer {
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+  }
+
+  .footerColumn {
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .footerColumn p:hover {
+    color:#991C37;
+    text-decoration: underline;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
+  .footerCopyright {
+    color: rgb(65, 65, 65);
+    text-align: center;
+  }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+  <script src="jquery.js"></script>
+  <title>Mondial Filter AB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/stylesheetIndex.css">
+
+
+
+
+  <script>
+        $(document).ready(function(){
+            $( ".more" ).each(function( index ) {
+                $(this).hide();
+            });
+           
+          $(".myBtn").click(function(){
+           
+            
+          var dots = $(this).prev().prev(".dots");
+          var moreText =  $(this).prev(".more");
+          var button = $(this);
+
+          if($(moreText).is(":visible")){
+            moreText.hide("4");  
+            dots.text.show();
+            button.text("Läs mer");
+          }
+          else{
+            moreText.show("4");
+            dots.text.hide();
+            button.text("Läs mindre");
+          }       
+    });
+  });
+
+  </script>
+</head>
+<body>
+  <!--Header-->
+  <div class="header">
+    <!-- Logo -->
+    <a href="index.html"><img src="css/images/Loggo.png" class="headerLogo" alt="Loggo"></a> <!-- Sidomenyn -->
+    <div class="rightHeader">
+      <a href="produkter.html">Produkter</a> <a href="villkor.html">Villkor</a> <a href="kontakt.html">Kontakt</a>
+    </div>
+  </div><!--Sidans innehåll-->
+  <div class="MondialBG">
+    <div class="shader">
+      <div class="containerText">
+         <div class="sektion">
+            <h1>Mondial Filter AB</h1>            
+            <button class="kontaktBtn">Kontakta oss</button>
+         </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="aboutBG">
+    <div class="shader">
+      <div class="containerText" id="whiteBG">
+            <h2>Om oss</h2>            
+            <p>En heltäckande leverantör av ventilationsfilter och stoftfilter.<br>
+            <br>
+            Med vår produktion i Borås kan vi erbjuda snabba och flexibla leveranser till våra kunder.<br>
+            <br>
+            Vårt breda produktutbud gör oss unika och kan ersätta flera inköpskanaler till en, nämligen oss Mondial Filter AB.<br>
+            <br>
+            Välkomna att <a href="/kontakt.html">kontakta oss</a></p>
+         </div>
+      </div>
+    </div>
+
+
+  <div class="StadBG">
+    <div class="shader">
+      <div class="containerText">
+        <h2>Ventilationsfilter</h2>
+        <p>Mondial Filter AB tillverkar alla typer av filter till ventilationsbranchen<div class="dots">..</div>.</p>
+        <div class="more">
+          <p>Vi har exempelvis påsfiltret till ditt ventilationsaggregat, Hepafiltret till din rymdforskningsstation, radiatorfiltret till ditt flerbostadshus och färgfällan till din lackeringsbox. Vi kan ta bort lukter och farliga gaser, vi gör filterboxar och vi kan framförallt hjälpa dig med vår erfarenhet. Mondial Filter AB producerar alla typer av påsfilter i filterklasserna ePM1, ePM2.5 , ePM10 och C, både i glas och syntetmedia. Med trä, metall eller plastram.<br>
+          <br>
+          Självklart har vi Panelfilter, Pleatfilter, Metallfilter, Kompaktfilter, Hepafilter, Strutfilter............. Och i de allra flesta fall med ram av trä, metall eller plast. Vi har alla typer av filtermedia, antingen som hel rulle eller klippt till färdiga mått.<br>
+          <br>
+          Vi har helt enkelt alla filter till ventilationsbranchen !</p>
+        </div><button class="myBtn">Läs mer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="serviceBG">
+    <div class="shader">
+      <div class="containerText" id="whiteBG">
+        <h2>Service / Reservdelar</h2>
+        <p>En filteranläggning kräver ständigt underhåll för att fungera lika bra som när den var ny<div class="dots">..</div>.</p>
+        <div class="more">
+          <p>Vi kan erbjuda våra kunder kontinuerliga besiktningar för att undvika kostsamma produktionsstopp och försämrad arbetsmiljö på grund av en icke fungerande processluft.<br>
+          <br>
+          Vi tillhandahåller reservdelar för de flesta fabrikat och erbjuder reparationer när det krävs.<br>
+          <br>
+          Har ni läckage i Era filter eller om filtermedian är igensatt erbjuder vi självklart hjälp att utföra filterbyte</p>
+        </div><button class="myBtn">Läs mer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="stoftBG">
+    <div class="shader">
+      <div class="containerText">
+        <h2>Stoftfilter</h2>
+        <p>I över 30 år har vi levererat filtrerande textiler till den svenska industrin för en dammfri arbetsmiljö och minskade utsläpp i vår miljö<div class="dots">..</div>.</p>
+        <div class="more">
+          <p>Med rätt val av filtermedia kan besparingar av driftkostnader och minimerade driftstopp bli betydande. Med egen produktion av filterslangar i Borås kan vi erbjuda ersättningsfilter till de flesta typer av filteranläggningar. Allt från textila filterslangar för rökgasrening på stora värmeverk till enstaka filterstrumpor för spånfiltret i det lilla snickeriet.<br>
+          <br>
+          Processfilter har många olika utföranden och vårt mål är att kunna hjälpa alla kunders behov genom en bred produktportfölj med stor erfarenhet.<br>
+          <br>
+          Filterpatroner, filterkassetter och filterpåsar för stoftfiltrering är också produkter vi förser våra kunder med.</p>
+        </div><button class="myBtn">Lär mer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="moldowBG">
+    <div class="shader">
+      <div class="containerText" id="whiteBG">
+        <h2>Moldow</h2>
+        <p>MOLDOW FILTERANLÄGGNINGAR - SYSTEM TILL SPÅNSUG OCH STOFTAVSKILJNING<div class="dots">...</div> </p>
+        <div class="more">
+          <p>Driftssäkert och moduluppbyggd filteranläggning för effektiv filtrering Som svensk och norsk generalagent till Moldow tillhandahåller vi både anläggningar och reservdelar till den svenska och norska marknaden.<br>
+          <br>
+          Moldows filteranläggningar är kända för låg driftskostnad, hög filtreringsgrad och flexibel processtyrning, vilket medför låga energikostnader och samtidigt hög driftsäkerhet. Kombinationen med Moldows Energy Manager-kontrollsystem och högeffektiva fläktar säkrar ett energioptimerat, driftsäkert och hållbart filtersystem, som kan ge besparingar på upp till 70% i jämförelse med traditionella anläggningar.<br>
+          <br>
+          Alla Moldows spånsugsanläggningar är moduluppbyggda, vilket gör det möjligt att skräddarsy anläggningen, så det passerar till det individuella företagets behov och produktion. Dessutom är modulsystemet en framtidssäkring då det enkelt går att utvidga med fler moduler.</p>
+        </div><button onclick="myFunction()" class="myBtn">Läs mer</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="filteranlaggningBG" >
+    <div class="shader">
+      <div class="containerText" id="whiteBG">
+        <h2>Filteranläggning</h2>
+        <p>Allt högre krav ställs på industrier när det gäller både arbetsmiljö och utsläpp<div class="dots">..</div>.</p>
+        <div class="more">
+          <p>Mondial Filter AB säljer kompletta filteranläggningar utformade för den specifika applikationen. Allt från små kompakta patronfilter till stora rökgasfilter i form av slangfilter.<br>
+          <br>
+          Vi erbjuder även ombyggnationer av befintliga stoftfilter som kan få det gamla skakrensade filtret till att klara av högre krav och bli energieffektivare med en ny tryckluftsrensning.</p>
+        </div><button onclick="myFunction()" class="myBtn">Läs mer</button>
+      </div>
+    </div>
+  </div>
+  
+  <!--    FOOTER         -->
+
+  <div class="footer">
+  
+    <div class="footerColumn">
+      <h2>Läs mer</h2>
+      <p href="">Villkor</p>
+      <p href="">Mer om våra filter</p>
+    </div>
+
+    <div class="footerColumn">
+      <h2 href="">Kontakta oss</h2>
+      <p href="">Mondial Filter AB Tvinnargatan 29 507 30 Brämhult</p>
+      <p>Org:556522-5090<br>
+      <br>
+      Bg: 5987-3612</p>
+      <p>Tel +46-(0)33-22 52 80</p>
+    </div>
+
+    <div class="footerCopyright">
+      <p>@Copyright Mondial Filter AB</p>
+    </div>
+
+  </div>
+</body>
+</html>
