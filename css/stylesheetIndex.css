@@ -252,10 +252,7 @@
       top: 0;
     }
     
-    #parallax {
-      background-attachment: scroll;
-      height: 100vh;
-    }
+
 
     .rightHeader.responsive {position: relative;}
     
@@ -269,9 +266,18 @@
       display: block;
       text-align: left;
     }
+    
+    #parallax {
+      background-attachment: scroll;
+      height: 100vh;
+    }
 
     .containerText {
       width: 100%;
       padding: 20px 5px;
+    }
+
+    .containerText h1 h2 {
+      font-size: 10vw;
     }
   }
