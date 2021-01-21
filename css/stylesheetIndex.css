@@ -1,4 +1,4 @@
-
+/*Header*/
   .header {
     z-index: 3;
     position: absolute;
@@ -13,27 +13,28 @@
   }
 
   .rightHeader {
-    padding: 10px;
     float: right;
-    width: 30%;
+    overflow: hidden;
+  }
+
+  .rightHeader .icon {
+    display: none;
   }
 
   .rightHeader a {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    float: left;
-    text-align: center;
-    padding: 12px; 
-    line-height: 25px;
-    border-radius: 4px;
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
   }
 
   .rightHeader a:hover {
   color: #991c37;
   opacity: 1;
   }
-  
 
   body {
     margin: 0;
@@ -41,11 +42,11 @@
     height: 100%;
   }
 
-  /* Här Börjar INDEX innehållet*/
+  /* INDEX innehållet*/
 
-/*Här är huvudinnehållet*/
+/*huvudinnehållet*/
 
- .shader {
+ .shader {/*Skuggar innehåll*/
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
@@ -55,8 +56,7 @@
 
   .MondialBG {
     background-image: url('./images/background2.jpg');    
-
-    /* Create the parallax scrolling effect */
+    /* Parallax scrolling effect */
     background-attachment: fixed;
     background-position: relative;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@
     height: 80vh;
   }
 
-
+/*All första sidans text*/
   .containerText {
     text-align: center;
     position: absolute;
@@ -165,7 +165,7 @@
   .containerText a:hover {
     color: rgb(153,28,55);
   }
-
+/*CSS knapp*/
   .more {
     display: none;
     text-align: left;
@@ -241,4 +241,37 @@
   .footerCopyright {
     color: rgb(65, 65, 65);
     text-align: center;
+  }
+/*För mindre media*/
+  @media screen and (max-width: 1012px) {
+    .rightHeader a{display: none;}
+    
+    .rightHeader.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    #parallax {
+      background-attachment: scroll;
+      height: 100vh;
+    }
+
+    .rightHeader.responsive {position: relative;}
+    
+    .rightHeader a.icon {
+      float: right;
+      display: block;
+    }
+    
+    .rightHeader.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .containerText {
+      width: 100%;
+      padding: 20px 5px;
+    }
   }

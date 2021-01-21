@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/stylesheetIndex.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -35,6 +35,15 @@
     });
   });
 
+  function menuShift() {
+  var x = document.getElementById("menu");
+  if (x.className === "rightHeader") {
+    x.className += " responsive";
+  } else {
+    x.className = "rightHeader";
+  }
+}
+
   </script>
 </head>
 <body>
@@ -42,14 +51,18 @@
   <div class="header">
     <!-- Logo -->
     <a href="index.html"><img src="css/images/Loggo.png" class="headerLogo" alt="Loggo"></a> <!-- Sidomenyn -->
-    <div class="rightHeader">
-      <a href="produkter.html">Produkter</a> <a href="villkor.html">Villkor</a> <a href="kontakt.html">Kontakt</a>
+    <div class="rightHeader" id="menu">
+      <a href="produkter.html">Produkter</a>
+      <a href="villkor.html">Villkor</a>
+      <a href="kontakt.html">Kontakt</a>      
+      <a href="javascript:void(0);" class="icon" onclick="menuShift()">
+        <i class="fa fa-bars"></i></a>
     </div>
   </div>
   
   <!--Sidans innehåll-->
 
-  <div class="MondialBG">
+  <div class="MondialBG" id="parallax">
     <div class="shader">
       <div class="containerText">
          <div class="sektion">
@@ -66,7 +79,7 @@
     </div>
   </div>
 
-  <div class="StadBG">
+  <div class="StadBG" id="parallax">
     <div class="shader">
       <div class="containerText">
         <h2>Ventilationsfilter</h2>
@@ -83,7 +96,7 @@
   </div>
 
 
-  <div class="serviceBG">
+  <div class="serviceBG" id="parallax">
     <div class="shader">
       <div class="containerText">
         <h2>Service / Reservdelar</h2>
@@ -100,7 +113,7 @@
   </div>
 
 
-  <div class="stoftBG">
+  <div class="stoftBG" id="parallax">
     <div class="shader">
       <div class="containerText">
         <h2>Stoftfilter</h2>
@@ -116,8 +129,7 @@
     </div>
   </div>
 
- <div class="container">
-  <div class="moldowBG">
+  <div class="moldowBG" id="parallax">
     <div class="shader">
       <div class="containerText">
         <h2>Moldow</h2>
@@ -132,9 +144,9 @@
       </div>
     </div>
   </div>
-</div>
 
-  <div class="filteranlaggningBG" >
+
+  <div class="filteranlaggningBG" id="parallax">
     <div class="shader">
       <div class="containerText">
         <h2>Filteranläggning</h2>
