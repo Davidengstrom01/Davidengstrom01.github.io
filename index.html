@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-
-  <script src="jquery.js"></script>
+    <!--Head-->
+  <script src="jquery.js"></script><!--Laddar in JQuery bibloteket-->
   <title>Mondial Filter AB</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/stylesheetIndex.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/stylesheetIndex.css"><!--CSS-->
 
 
-
+<!-- Javascript -->
   <script>
+    //Läs mer knappar
         $(document).ready(function(){
             $( ".more" ).each(function( index ) {
                 $(this).hide();
@@ -31,18 +31,10 @@
           else{
             moreText.show("4");
             button.text("Läs mindre");
-          }       
-    });
+          }
+        });
   });
-
-  function menuShift() {
-  var x = document.getElementById("menu");
-  if (x.className === "rightHeader") {
-    x.className += " responsive";
-  } else {
-    x.className = "rightHeader";
-  }
-}
+  //Menu till fafafabars
 
   </script>
 </head>
@@ -51,15 +43,25 @@
   <div class="header">
     <!-- Logo -->
     <a href="index.html"><img src="css/images/Loggo.png" class="headerLogo" alt="Loggo"></a> <!-- Sidomenyn -->
-    <div class="rightHeader" id="menu">
+    <div class="rightHeader" >
       <a href="produkter.html">Produkter</a>
       <a href="villkor.html">Villkor</a>
-      <a href="kontakt.html">Kontakt</a>      
-      <a href="javascript:void(0);" class="icon" onclick="menuShift()">
-        <i class="fa fa-bars"></i></a>
-    </div>
+      <a href="kontakt.html">Kontakt</a> 
+  </div>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
   </div>
   
+  <!-- Use any element to open the sidenav -->
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+  </div>
   <!--Sidans innehåll-->
 
   <div class="MondialBG" id="parallax">
@@ -185,4 +187,16 @@
 
   </div>
 </body>
+
+<script>
+            function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
 </html>
