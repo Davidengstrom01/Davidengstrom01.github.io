@@ -52,18 +52,16 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+      <a href="produkter.html">Produkter</a>
+      <a href="villkor.html">Villkor</a>
+      <a href="kontakt.html">Kontakt</a>
   </div>
   
   <!-- Use any element to open the sidenav -->
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <span class="openBtn" onclick="openNav()">&#9776; </span>
 
   </div>
   <!--Sidans innehåll-->
-
   <div class="MondialBG" id="parallax">
     <div class="shader">
       <div class="containerText">
@@ -92,7 +90,9 @@
           Självklart har vi Panelfilter, Pleatfilter, Metallfilter, Kompaktfilter, Hepafilter, Strutfilter............. Och i de allra flesta fall med ram av trä, metall eller plast. Vi har alla typer av filtermedia, antingen som hel rulle eller klippt till färdiga mått.<br>
           <br>
           Vi har helt enkelt alla filter till ventilationsbranchen !</p>
-        </div><button class="myBtn">Läs mer</button>
+        </div>
+        <button class="myBtn">Läs mer</button>
+        <a class ="myLink" href="ventilationsfilter.html"> Läs mer </a>
       </div>
     </div>
   </div>
@@ -109,7 +109,9 @@
           Vi tillhandahåller reservdelar för de flesta fabrikat och erbjuder reparationer när det krävs.<br>
           <br>
           Har ni läckage i Era filter eller om filtermedian är igensatt erbjuder vi självklart hjälp att utföra filterbyte</p>
-        </div><button class="myBtn">Läs mer</button>
+        </div>
+        <button class="myBtn">Läs mer</button>
+        <a class ="myLink" href="serviceInfo.html"> Läs mer </a>
       </div>
     </div>
   </div>
@@ -126,7 +128,9 @@
           Processfilter har många olika utföranden och vårt mål är att kunna hjälpa alla kunders behov genom en bred produktportfölj med stor erfarenhet.<br>
           <br>
           Filterpatroner, filterkassetter och filterpåsar för stoftfiltrering är också produkter vi förser våra kunder med.</p>
-        </div><button class="myBtn">Lär mer</button>
+        </div> 
+        <button class="myBtn">Lär mer</button>
+        <a class ="myLink" href="stoftfilter.html"> Läs mer </a>
       </div>
     </div>
   </div>
@@ -142,7 +146,9 @@
           Moldows filteranläggningar är kända för låg driftskostnad, hög filtreringsgrad och flexibel processtyrning, vilket medför låga energikostnader och samtidigt hög driftsäkerhet. Kombinationen med Moldows Energy Manager-kontrollsystem och högeffektiva fläktar säkrar ett energioptimerat, driftsäkert och hållbart filtersystem, som kan ge besparingar på upp till 70% i jämförelse med traditionella anläggningar.<br>
           <br>
           Alla Moldows spånsugsanläggningar är moduluppbyggda, vilket gör det möjligt att skräddarsy anläggningen, så det passerar till det individuella företagets behov och produktion. Dessutom är modulsystemet en framtidssäkring då det enkelt går att utvidga med fler moduler.</p>
-        </div><button onclick="myFunction()" class="myBtn">Läs mer</button>
+        </div>
+        <button onclick="myFunction()" class="myBtn">Läs mer</button>
+        <a class ="myLink" href="moldow.html"> Läs mer </a>
       </div>
     </div>
   </div>
@@ -157,7 +163,9 @@
           <p>Mondial Filter AB säljer kompletta filteranläggningar utformade för den specifika applikationen. Allt från små kompakta patronfilter till stora rökgasfilter i form av slangfilter.<br>
           <br>
           Vi erbjuder även ombyggnationer av befintliga stoftfilter som kan få det gamla skakrensade filtret till att klara av högre krav och bli energieffektivare med en ny tryckluftsrensning.</p>
-        </div><button onclick="myFunction()" class="myBtn">Läs mer</button>
+        </div>
+        <button onclick="myFunction()" class="myBtn">Läs mer</button>
+        <a class ="myLink" href="filteranl.html"> Läs mer </a>
       </div>
     </div>
   </div>
@@ -174,11 +182,11 @@
 
     <div class="footerColumn">
       <h2 href="">Kontakta oss</h2>
-      <p href="">Mondial Filter AB Tvinnargatan 29 507 30 Brämhult</p>
+      <p href="">Mondial Filter AB <br> Tvinnargatan 29 <br> 507 30 Brämhult</p>
       <p>Org:556522-5090<br>
       <br>
       Bg: 5987-3612</p>
-      <p>Tel +46-(0)33-22 52 80</p>
+      <p>Telefonväxel: <br> +46-(0)33-22 52 80</p>
     </div>
 
     <div class="footerCopyright">
@@ -189,11 +197,10 @@
 </body>
 
 <script>
-            function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
 }
 
-/* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
