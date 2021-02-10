@@ -1,0 +1,219 @@
+body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	flex: 1 0 auto;
+}
+/*--- HEADER ---*/
+.header {
+	position: relative;
+	flex-shrink: 0;
+	width:100%;
+	background-color:#fff;
+}
+.headerLogo {
+	width:153px;
+	padding:10px;
+}
+.rightHeader {
+	float:right;
+	overflow:hidden;
+}
+.rightHeader a {
+	float:left;
+	display:block;
+	color:#000;
+	text-align:center;
+	text-decoration:none;
+	font-size:20px;
+	padding:14px 16px;
+}
+.rightHeader a:hover {
+	color:#991c37;
+	opacity:1;
+}
+/*--- SIDNAVIGATION ---*/
+.sidenav {
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	background-color:#111;
+	overflow-x:hidden;
+	transition:.5s;
+	padding-top:60px;
+	text-align:center;
+}
+.sidenav a {
+	text-decoration:none;
+	font-size:25px;
+	color:#818181;
+	display:block;
+	transition:.3s;
+	padding:8px 8px 8px 32px;
+}
+.sidenav a:hover {
+	color:#f1f1f1;
+}
+.sidenav .closebtn {
+	position:absolute;
+	top:0;
+	right:25px;
+	font-size:36px;
+	margin-left:50px;
+}
+.openBtn {
+	display:none;
+	font-size:30px;
+	cursor:pointer;
+}
+/*Sidinnehåll*/
+.content {
+	min-height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding-top: 70px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-image: url(./images/telefon.jpg);
+	background-attachment:fixed;
+	background-position:relative;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display: flex;
+    flex-direction: column;
+}
+.container{
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.tabs{
+	width: 100%;
+}
+.tabs button {
+	text-align: left;
+	background-color: rgb(233, 233, 233);
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.8s;
+	width: 33.33%;
+	border-bottom: 5px solid #949494;
+}
+.tabs button:hover {
+	background-color: #ddd;
+  }
+.tabs button.active {
+	border-bottom: 5px solid #991C37;
+}
+.tablinks {
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+}
+.tabContent{
+	margin: 0px auto 0px auto;
+	width: 100%;
+	padding: 10px 5px;
+	text-align: left;
+	background-color: rgb(255, 255, 255);
+}
+
+/*--- FOOOTER ---*/
+.footer {
+	width:100%;
+	position:absolute;
+	background-color: black;
+	flex-shrink: 0;
+	margin: 0;
+	padding: 0;
+}
+.footerColumn {
+	color:rgb(255, 255, 255);
+	float:left;
+	width:33.33%;
+	padding:30px;
+}
+.footerColumn a {
+	color: white;
+	text-decoration: none;
+}
+.footerColumn a:hover {
+	color:#991C37;
+	text-decoration:underline;
+}
+.footerCertifikat img{
+	height: 60px;
+	margin: 10px;
+}
+
+.row:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+.footerCopyright {
+	color:#414141;
+	text-align:center;
+}
+* {
+	box-sizing: border-box;
+}
+@media screen and (max-width: 1175px){
+	.container{
+		width: 80%;
+	}
+}
+/*--- MOBILER ---*/
+@media screen and (max-width: 1012px){
+	.sidenav {
+		padding-top:15px;
+	}
+	.sidenav a {
+		font-size:18px;
+	}
+	.openBtn {
+		display:inline;
+		float:right;
+	}
+	.header{
+		position: fixed;
+		height: 70px;
+		z-index: 4;
+	}
+	.rightHeader {
+		display:none;
+	}
+	.container{
+		width: 95%;
+	}
+	.container h1{
+		color: rgb(255, 255, 255);
+	}
+	.content{
+		background-attachment: scroll;
+	}
+	.tabs button {
+		width: 100%;
+	}
+	.tablinks{
+		font-size: 18px;
+		height: 80px;
+	}
+	.footerColumn{
+		width: 100%;
+	}
+	.footerCertifikat img{
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		height: auto;
+		width: 180px;
+	}
+}

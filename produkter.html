@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <!--Head-->
+  <title>Mondial Filter AB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/stylesheetProdukter.css"><!--CSS-->
+
+  <script src="jquery.js"></script><!--Laddar in JQuery bibloteket-->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+  <div class="header">
+    <!-- Logo -->
+    <a href="index.html"><img src="css/images/Loggo.png" class="headerLogo" alt="Loggo"></a> <!-- Sidomenyn -->
+    <div class="rightHeader">
+      <a href="produkter.html">Produkter</a> <a href="villkor.html">Villkor</a> <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> <a href="produkter.html">Produkter</a> <a href="villkor.html">Villkor</a> <a href="kontakt.html">Kontakt</a>
+    </div><!-- Use any element to open the sidenav -->
+    <span class="openBtn" onclick="openNav()">☰</span>
+  </div>
+  
+  <div class="content">
+    <div class="container">
+    <h1>Mondial Filter AB Produkter</h1>
+    <div class="tabs">
+      <button class="tablinks" onclick="openTab(event,'ventilationsfilter')" id="defaultOpen">Ventilationsfilter</button>
+      <button class="tablinks" onclick="openTab(event,'stoftfilter')">Stoftfilter</button>
+      <button class="tablinks"onclick="openTab(event,'anläggningar')">Anläggningar</button>
+    </div>
+      <div class="tabContent" id="ventilationsfilter">
+        <h2>Ventilationsfilter</h2><a href="produkter/AirCat%20p%C3%A5sfilter.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, översikt">AirCat påsfilter</a><br>
+        <a href="produkter/AirCat%20tekniska%20data.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, tekniska data">AirCat påsfilter tekniska data</a><br>
+        <a href="produkter/Claire%20filtermattor.pdf" target="_blank" data-toggle="tooltip" title="Filtermattor, översikt">Claire filtermattor</a><br>
+        <a href="produkter/Claire.colour%20L.pdf" target="_blank" data-toggle="tooltip" title="Färgfälla">Claire L</a><br>
+        <a href="produkter/Claire.colour%20X7_X17.pdf" target="_blank" data-toggle="tooltip" title="Färgfälla">Claire X7/X17</a><br>
+        <a href="produkter/Claire.colour%20S7.pdf" target="_blank" data-toggle="tooltip" title="Takfilter">Claire S7</a><br>
+        <a href="produkter/Claire.glas%20HX23.pdf" target="_blank" data-toggle="tooltip" title="Filtermatta, glas">Claire HX23</a><br>
+        <a href="produkter/Claire.glas%20X23.pdf" target="_blank" data-toggle="tooltip" title="Filtermatta, glas">Claire X23</a><br>
+        <a href="produkter/Claire.rex%206305.pdf" target="_blank" data-toggle="tooltip" title="Filtermatta 6305">Claire 6305</a><br>
+        <a href="produkter/Claire.tex%20S15.pdf" target="_blank" data-toggle="tooltip" title="Filtermatta S15">Claire S15</a><br>
+        <a href="produkter/Claire.tex%20S20.pdf" target="_blank" data-toggle="tooltip" title="Filtermatta S20">Claire S20</a><br>
+        <a href="produkter/Claire.tex%20S35.pdf" target="_blank" data-toggle="tooltip" title="Filtermatta S35">Claire S35</a><br>
+      </div>
+      <div class="tabContent" id="stoftfilter">
+        <h2>Stoftfilter</h2><a href="produkter/AirCat.G.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, glasmedia">AirCat Glas</a><br>
+        <a href="produkter/AirCat.G.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, syntetmedia">AirCat Tex</a><br>
+        <a href="produkter/AirCat.G.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, syntetmedia">AirCat Nano</a><br>
+      </div>
+      <div class="tabContent" id="anläggningar">
+        <h2>Anläggningar</h2><a href="produkter/AirCat.G.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, glasmedia">AirCat Glas</a><br>
+        <a href="produkter/AirCat.G.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, syntetmedia">AirCat Tex</a><br>
+        <a href="produkter/AirCat.G.pdf" target="_blank" data-toggle="tooltip" title="Påsfilter, syntetmedia">AirCat Nano</a><br>
+      </div>
+    </div>
+  </div>  
+</div>
+  <div class ="footer">
+    <div class="footerColumn">
+       <h2>Läs mer</h2>
+       <a href="">Villkor</a>
+       <p>Mer om våra filter:</p>
+       <a href="" style="text-decoration: underline;">Hur fungerar kolfilter?</a> 
+       <br></br>
+       <a href="" style="text-decoration: underline;">Principen för radiatorfilter</a>
+     </div>
+   
+     <div class="footerColumn">
+       <h2>Kontakta oss</h2>
+       <a href="">Mondial Filter AB <br> Tvinnargatan 29 <br> 507 30 Brämhult</a> <br></br>
+       <a href="">Org:556522-5090
+       <br>
+       Bg: 5987-3612</a>
+       <p>Telefonväxel: <br> +46-(0)33-22 52 80</p>
+     </div>
+     <div class="footerColumn">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32422.35256514969!2d13.008333063031714!3d57.73085559100988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3de86cb682fde94b!2sMondial%20Filter%20AB!5e0!3m2!1ssv!2sse!4v1612878836307!5m2!1ssv!2sse" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+     </div>
+     <div class="footerCertifikat">
+       <img src="./css/images/fti.gif" alt="">
+       <img src="./css/images/iso.png" alt="">
+       <img src="./css/images/moldow.png" alt="">
+     </div>
+   
+     <div class="footerCopyright">
+       <p>@Copyright Mondial Filter AB</p>
+     </div>
+   </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabContent");
+
+      for (i=0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>
